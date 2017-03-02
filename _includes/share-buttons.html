@@ -1,0 +1,31 @@
+<!-- https://simplesharingbuttons.com/ -->
+<ul class="share-buttons">
+  <li>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append: page.url  }}" title="Share on Facebook" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/intent/tweet?source={{ site.url | append: page.url  }}&via={{ site.title }}" target="_blank" title="Tweet">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://plus.google.com/share?url={{ site.url | append: page.url  }}" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://pinterest.com/pin/create/button/?url={{ site.url | append: page.url  }}&description={page.description}" target="_blank" title="Pin it">
+      <i class="fa fa-pinterest-p"></i>
+    </a>
+  </li>
+  <li>
+    <a href="mailto:recipient?subject={page.title}&body={page.description}:%20{{ site.url | append: page.url }}" target="_blank" title="Email">
+      <i class="fa fa-envelope-o"></i>
+    </a>
+  </li>
+  <div>
+
+  </div>
+</ul>
