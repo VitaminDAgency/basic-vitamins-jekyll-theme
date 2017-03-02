@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "basic-vitamins"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.authors       = ["Kory Calmes"]
   spec.email         = ["kory@calmes.org"]
 
@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.3"
+  spec.add_runtime_dependency 'seo-and-social-tags', :git => 'git@github.com:VitaminDAgency/seo-and-social-tags-jekyll-plugin.git'
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
