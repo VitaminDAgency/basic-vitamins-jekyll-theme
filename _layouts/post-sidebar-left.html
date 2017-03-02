@@ -1,0 +1,82 @@
+---
+layout: blog
+type: article
+---
+
+<section>
+  <div class="container main-content">
+    <div class="row">
+      <aside class="col-md-4">
+        <div class="cta subscribe">
+          <div class="title-box">
+            <div class="title">
+              Want to up your marketing game?
+            </div>
+            <div class="sub-title">
+              Sign up for updates.
+            </div>
+          </div>
+          <form>
+            <div class="half">
+              <label for="first-name">First Name*</label>
+              <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="half">
+              <label for="last-name">Last Name*</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
+            <div>
+              <label for="email">Email*</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <input class="btn btn-darkgray btn-sm" type="submit" value="Subscribe">
+          </form>
+        </div>
+
+        <div class="recent-posts">
+          <h3>Recent posts</h3>
+          <ul>
+            {% for post in site.posts limit:5 %}
+              <li class="recent-post"><a href="{{post.url}}">{{post.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="topics">
+          <h3>Posts by topic</h3>
+          <ul>
+          {% for category in site.categories %}
+            <li class="topic">{{category | category_link_with_count}}</li>
+          {% endfor %}
+          </ul>
+        </div>
+      </aside>
+      <div class="col-md-8">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p class="post-meta">{% if page.author %} Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author.display_name }}</span>  {% endif %}<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%a, %B %d, %Y" }}</time></p>
+            <div class="social-share">{%include share-buttons.html %}</div>
+            <img src="{{page.thumbnail}}" alt="{{ page.title }}" />
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+
+            {{ content }}
+
+          </div>
+          <div class="categories">Posts: {{ page.categories | category_links }}</div>
+
+          {% if page.cta != null %}
+            {% for cta in site.ctas %}
+              {% if page.cta == cta.key %}
+                {{cta}}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

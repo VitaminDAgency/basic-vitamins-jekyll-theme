@@ -1,0 +1,271 @@
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #ffffff;
+  @media (min-width: $screen-sm-min) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  color: #ffffff;
+  @media (min-width: $screen-sm-min) {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-size: 14px;
+  color: #ffffff;
+  @media (min-width: $screen-sm-min) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 14px;
+  color: #ffffff;
+  @media (min-width: $screen-sm-min) {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-size: 10px;
+  color: #ffffff;
+	font-weight: normal;
+  @media (min-width: $screen-sm-min) {
+    font-size: 14px;
+  }
+}
+.brand-color {
+	color: $brand-primary;
+}
+.text {
+  &-center, &-xs-center {
+    text-align: center;
+  }
+  &-left &-xs-left {
+    text-align: left;
+  }
+  &-right, &-xs-right {
+    text-align: right;
+  }
+  @media (min-width: $screen-sm-min) {
+    &-sm-center {
+      text-align: center;
+    }
+    &-sm-left {
+      text-align: left;
+    }
+    &-sm-right {
+      text-align: right;
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    &-md-center {
+      text-align: center;
+    }
+    &-md-left {
+      text-align: left;
+    }
+    &-md-right {
+      text-align: right;
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    &-lg-center {
+      text-align: center;
+    }
+    &-lg-left {
+      text-align: left;
+    }
+    &-lg-right {
+      text-align: right;
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+.text-brand {
+	color: $brand-primary;
+}
+
+.text-white {
+  color: $btn-white-bg;
+}
+
+.text-gray {
+  color: $btn-gray-bg;
+}
+
+.text-gray-darker {
+	color: $gray-darker;
+}
+
+.btn {
+  font-weight: 500;
+  padding: 3px 6px;
+  font-size: 18px;
+  border-radius: 3px;
+  &-xs {
+    padding: 0px 5px;
+    font-size: 14px;
+  }
+  &-sm {
+    padding: 3px 6px;
+    font-size: 14px;
+  }
+
+  &-md {
+    padding: 3px 8px;
+  }
+
+  &-lg {
+    font-weight: 700;
+    padding: 3px 9px;
+    font-size: 24px;
+  }
+}
+
+
+.navbar {
+  min-height: $nav-height;
+}
+.navbar-header {
+  height: $nav-height;
+}
+.navbar-brand {
+  float: left;
+  margin: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  height: 50px;
+}
+.navbar-toggle {
+  margin: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
+  padding: 10px 10px;
+}
+.navbar-nav > li > a {
+  @media (min-width: $screen-sm-min) {
+    padding-top: 23px;
+    padding-bottom: 22px;
+  }
+}
+nav.secondary-nav {
+	background-color: $gray-darker;
+	height: 115px;
+	text-align: center;
+	position: relative;
+	ul {
+		list-style: none;
+		padding: 0px 20px;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		white-space: nowrap;
+	}
+	li {
+		width: 110px;
+		height: 115px;
+		margin: 0px 5px;
+		display: inline-block;
+		vertical-align: top;
+		white-space: normal;
+
+		&.active {
+			background-color: #ffffff;
+			border: 1px solid #9b9b9b;
+			border-bottom-width: 0px;
+			.title {
+				color: $gray-darker;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+		.title {
+			text-align: center;
+			color: #ffffff;
+			text-transform: uppercase;
+			display: table-cell;
+			vertical-align: middle;
+			height: 36px;
+		}
+	}
+
+	.scroll-left, .scroll-right {
+		color: #404040;
+		background-color: rgba(100,100,100,0.7);
+		position: absolute;
+		top: 0;
+		font-size: 25px;
+		width: 25px;
+		height: 100%;
+		.fa {
+			margin-top: 42px;
+		}
+	}
+	.scroll-left {
+		left: 0;
+		.fa {
+			margin-right: 5px;
+		}
+	}
+	.scroll-right {
+		right: 0;
+		.fa {
+			margin-left: 5px;
+		}
+	}
+}
+main {
+	margin-top: $nav-height;
+}
+
+footer {
+  min-height: 85px;
+  padding-top: 21px;
+  background-color: $gray-darker;
+	ul li {
+		a, a:visited, a:hover, a:active {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+}
+
+.no-bg {
+	background: none !important;
+}
+
+.container-background {
+  width: 100%;
+}
+.container-background:before, .container-background:after {
+  content: " ";
+  display: table;
+}
+.container-background:after {
+  clear: both;
+}
+
+.bg-cover {
+	background-position: left center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Forms */
+input[type=text] {
+	margin: 0 auto;
+	width: 100%;
+	height: 28px;
+	border-radius: 3px;
+	border-width: 0;
+}

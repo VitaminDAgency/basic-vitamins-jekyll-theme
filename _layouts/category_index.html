@@ -1,0 +1,24 @@
+---
+layout: blog
+---
+<section id="">
+  <div class="container">
+    <div class="row">
+      <div class="post col-xs-12">
+        <h3 class="category">{{ page.title }}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="post-list">
+  <div class="container">
+    <div class="row">
+      {% for post in site.categories[page.category] %}
+      <div class="post col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        {% include blog-post-summary.html post=post %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

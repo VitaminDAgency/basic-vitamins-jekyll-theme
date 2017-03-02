@@ -1,0 +1,13 @@
+<div class="post-summary">
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+    <div class="blog-thumbnail" style="background-image:url({{post.thumbnail}})">
+      <div class="date">
+        {{ post.date | date: "%m/%d/%Y" }}
+      </div>
+    </div>
+    <h4 class="title">{{ post.title }}</h4>
+  </a>
+  <div>
+    <div class="categories">Posts: {{ post.categories | category_links }}</div>
+  </div>
+</div>
