@@ -1,0 +1,24 @@
+
+{% if site.google_analytics_code %}
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '{{ site.google_analytics_code }}', 'auto');
+
+// Replace the following lines with the plugins you want to use.
+ga('require', 'cleanUrlTracker');
+ga('require', 'eventTracker');  
+ga('require', 'maxScrollTracker');
+ga('require', 'outboundFormTracker');
+ga('require', 'outboundLinkTracker');
+ga('require', 'pageVisibilityTracker');
+// ...
+
+ga('send', 'pageview');
+
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="/assets/javascript/autotrack.js"></script>
+<script async src="/assets/javascript/google-analytics-extended.js"></script>
+<!-- End Google Analytics -->
+{% endif %}
