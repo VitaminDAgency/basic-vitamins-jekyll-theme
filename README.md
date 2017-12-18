@@ -1,8 +1,6 @@
 # basic-vitamins
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+Default theme elements for jQuery, Bootstrap 3, Extended CSS classes, Google Analytics, Facebook Pixel, SEO and Social Tags, Hubspot Tracking, and CSS Animate.
 
 ## Installation
 
@@ -29,6 +27,145 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+
+CSS Classes: 
+
+```
+btn-tertiary-light-on-white
+btn-white-on-primary-light
+btn-white-on-tertiary-light
+btn-white-on-secondary-light
+btn-white-on-primary
+btn-white-on-dark-tertiary
+btn-white-on-secondary
+btn-white-on-gray
+btn-primary-light-border
+btn-primary-border
+btn-secondary-light-border
+btn-secondary-border
+btn-tertiary-light-border
+btn-tertiary-border
+
+btn-xs
+btn-sm
+btn-md
+btn-lg
+btn-xl
+
+top-outer-space-sm
+top-outer-space-md
+top-outer-space-lg
+top-outer-space-xl
+
+color-primary
+color-secondary
+color-tertiary
+
+text-lighter-gray
+text-light-gray
+text-gray
+text-dark-gray
+text-darker-gray
+text-black
+text-primary
+text-secondary
+text-tertiary
+
+bg-lightest-gray
+bg-lighter-gray
+bg-light-gray
+bg-gray
+bg-dark-gray
+bg-darker-gray
+bg-black
+bg-primary
+bg-secondary
+bg-tertiary
+
+bg-no-repeat
+
+text-uppercase
+text-lowercase
+
+hero
+
+footer > follow-icons
+follow-icons > li
+follow-icons > fa-twitter
+follow-icons > fa-linkedin-square
+follow-icons > fa-facebook-official
+
+video-js
+
+form input[type=text],input[type=email],input[type=password], textarea[type=text]
+form > input > icon-padding
+form > textarea[type=text]
+form > input-group
+form > inner-icon-left
+form > inner-icon-left fa-credit-card-alt
+form > inner-icon-left fa-envelope
+form > inner-icon-left fa-lock
+form > inner-icon-left fa-user
+form > error
+
+modal-body > h1
+modal-body > h2
+modal-body > h3
+modal-body > h4
+modal-body > h5
+page-header
+thank-you-message
+thank-you-message-half
+center-vertically
+md-center-vertically
+full-width
+no-margin
+margin-0
+no-padding
+padding-0
+padding-top-bot-40
+padding-top-40
+padding-top-100
+padding-top-20
+padding-left-20
+padding-bot-40
+float-left
+float-right
+transparent
+text-lightest
+text-light
+text-regular
+text-medium
+text-bold
+text-italic
+font-size-8
+font-size-10
+font-size-12
+font-size-14
+font-size-16
+font-size-18
+font-size-20
+font-size-22
+font-size-24
+font-size-26
+font-size-28
+font-size-30
+font-size-32
+font-size-34
+font-size-36
+font-size-40
+font-size-44
+sm-font-size-40
+md-font-size-40
+sm-font-size-44
+line-height-30
+z-index-100
+z-index-neg-100
+z-index-1000
+z-index-neg-1000
+z-index-10000
+z-index-neg-10000
+```
 
 ## Contributing
 

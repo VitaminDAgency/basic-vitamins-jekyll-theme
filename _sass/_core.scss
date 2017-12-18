@@ -292,68 +292,6 @@ section {
   background-color: rgba(255,255,255,0.65);
 }
 
-#white-nav {
-  // height: 65px;
-  &.navbar-default {
-    .navbar-nav {
-      & > li > a, & > li > a:hover, & > li > a:focus {
-        color: $gray-darker;
-      }
-      & > li > a:hover, & > li > a:focus {
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      .spacer {
-        height: 20px;
-        width: 0px;
-        margin-top: 23px;
-        padding: 0px;
-        border-left: 1px solid $gray-darker;
-      }
-    }
-    .navbar-toggle .icon-bar {
-      background-color: $gray-darker;
-    }
-  }
-  .collapsing {
-    // height:
-  }
-}
-#blue-nav {
-  top: 0px;
-  &.navbar-default {
-    .navbar-header {
-      height: 106px;
-    }
-    .navbar-nav {
-      & > li > a, & > li > a:hover, & > li > a:focus {
-        color: #ffffff;
-      }
-      & > li > a:hover, & > li > a:focus {
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      .spacer {
-        height: 20px;
-        width: 0px;
-        margin-top: 23px;
-        padding: 0px;
-        border-left: 1px solid #ffffff;
-      }
-    }
-    .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-      .navbar-nav {
-        margin-top: 42px;
-        li {
-          a {
-            color: $gray-darker;
-          }
-        }
-      }
-    }
-  }
-}
-
 footer {
   min-height: 100px;
   background-color: #444444;
@@ -635,6 +573,21 @@ form {
 .line-height-30 {
   line-height: 30px !important;
 }
-.z-index-50 {
-  z-index: 50;
+.z-index-100 {
+  z-index: 100;
+}
+.z-index-neg-100 {
+  z-index: -100;
+}
+.z-index-1000 {
+  z-index: 1000;
+}
+.z-index-neg-1000 {
+  z-index: -1000;
+}
+.z-index-10000 {
+  z-index: 10000;
+}
+.z-index-neg-10000 {
+  z-index: -10000;
 }
