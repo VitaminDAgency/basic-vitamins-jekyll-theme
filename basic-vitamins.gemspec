@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "basic-vitamins"
-  spec.version       = "0.3.1"
+  spec.version       = "0.3.2"
   spec.authors       = ["Kory Calmes"]
   spec.email         = ["kory@calmes.org"]
 
