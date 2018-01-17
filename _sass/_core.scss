@@ -292,55 +292,6 @@ section {
   background-color: rgba(255,255,255,0.65);
 }
 
-footer {
-  min-height: 100px;
-  background-color: #444444;
-  padding-bottom: 25px;
-  .follow-icons {
-    padding: 20px 0px;
-  }
-  .navbar-nav {
-    text-align: center;
-    & > li {
-      width: 140px;
-      padding-left: 5px;
-      display: inline-block;
-      vertical-align: top;
-      text-align: left;
-      & a {
-        padding: 5px;
-      }
-      & > .subnav {
-        list-style: none;
-        padding-left: 10px;
-        & a {
-          color: #ffffff;
-          font-weight: 100;
-        }
-      }
-    }
-  }
-}
-.follow-icons {
-  list-style: none;
-  padding: 5px 0px;
-  margin: 0px;
-  li {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-  }
-  .fa-twitter {
-    color: #79A7D8;
-  }
-  .fa-linkedin-square {
-    color: #0077B5;
-  }
-  .fa-facebook-official {
-    color: #3b5998;
-  }
-}
 .vjs-big-play-centered .vjs-big-play-button {
   top: 50%;
   left: 50%;
@@ -353,65 +304,6 @@ footer {
 .vjs-icon-play:before, .video-js .vjs-big-play-button:before {
   margin-top: 25px;
   font-size: 50px;
-}
-
-form {
-  input[type=text],input[type=email],input[type=password], textarea[type=text] {
-    width: 100%;
-    border: 1px solid $brand-primary;
-    border-radius: 8px;
-    margin: 10px 0px;
-    padding: 0px 10px;
-    height: 40px;
-    color: $brand-primary;
-    font-size: 16px;
-    &.icon-padding {
-      padding-left: 40px;
-    }
-  }
-  textarea[type=text] {
-    height: 100px;
-    padding-top: 10px;
-  }
-  .input-group {
-    position: relative;
-    display: block;
-    .inner-icon-left {
-      position: absolute;
-      top: 18px;
-      left: 10px;
-      color: $brand-primary-light-solid;
-      font-size: 25px;
-    }
-  }
-  .inner-icon-left {
-    left: 12px;
-    &.fa-credit-card-alt {
-      top: 19px;
-      left: 8px;
-      font-size: 21px;
-    }
-    &.fa-envelope {
-      left: 10px;
-      font-size: 22px;
-    }
-    &.fa-lock {
-      top: 16px;
-      left: 13px;
-      font-size: 28px;
-    }
-    &.fa-user {
-      top: 16px;
-      left: 10px;
-      font-size: 28px;
-    }
-  }
-
-  .error {
-    position: relative;
-    display: block;
-    color: $brand-danger;
-  }
 }
 
 .modal-body {
