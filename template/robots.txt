@@ -1,0 +1,9 @@
+---
+---
+{% if site.robots %}
+User-agent: *
+Disallow:
+{% else %}
+User-agent: *
+Disallow: /
+{% endif %}

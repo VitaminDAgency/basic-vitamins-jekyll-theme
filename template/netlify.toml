@@ -1,0 +1,5 @@
+[context.production]
+  command = "jekyll build --config _config.yml"
+
+[context.branch-deploy]
+  command = "jekyll build --config _config.yml,_config_staging.yml"
